@@ -3,7 +3,7 @@ def by_day(courses: list[tuple[str, str]]) -> dict:
     for course, day in courses:
         result.setdefault(day, []).append(course)
         
-    for day in result:
-        result[day].sort()
+    for courses_list in result.values():
+        courses_list.sort()
         
     return result
