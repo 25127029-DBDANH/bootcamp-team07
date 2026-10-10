@@ -1,5 +1,6 @@
 from statistics import median
 
+
 def summary(scores: list[float]) -> dict:
     if len(scores) == 0:
         raise ValueError("Empty list!")
