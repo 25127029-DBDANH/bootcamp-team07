@@ -37,6 +37,44 @@ def test_w1_4_translate(load, variant):
     elif variant == 3:
         assert tr.transpose([[1, 2, 3], [4, 5, 6]]) == [[1, 4], [2, 5], [3, 6]]
         assert tr.transpose([]) == []
+    # ---- Team 07 extension: extra variants 5-7 (original branches 1-4 are unchanged) ----
+    elif variant == 5:  # GCD / LCM
+        assert tr.gcd(12, 18) == 6
+        assert tr.gcd(7, 13) == 1
+        assert tr.gcd(10, 5) == 5
+        assert tr.gcd(0, 5) == 5
+        assert tr.gcd(5, 0) == 5
+        assert tr.lcm(4, 6) == 12
+        assert tr.lcm(3, 7) == 21
+        assert tr.lcm(5, 5) == 5
+        assert tr.lcm(0, 7) == 0
+        assert tr.lcm(7, 0) == 0
+        assert tr.lcm(10**10, 10**10 + 1) == 10**10 * (10**10 + 1)
+    elif variant == 6:  # palindrome / reverse (case-sensitive)
+        assert tr.is_palindrome("level") is True
+        assert tr.is_palindrome("abba") is True
+        assert tr.is_palindrome("a") is True
+        assert tr.is_palindrome("") is True
+        assert tr.is_palindrome("git") is False
+        assert tr.is_palindrome("Level") is False
+        assert tr.reverse_string("git") == "tig"
+        assert tr.reverse_string("Hello") == "olleH"
+        assert tr.reverse_string("a") == "a"
+        assert tr.reverse_string("") == ""
+    elif variant == 7:  # frequency count
+        assert tr.count_freq([3, 1, 3, 2, 1, 3]) == {3: 3, 1: 2, 2: 1}
+        assert tr.count_freq([]) == {}
+        assert tr.count_freq([5]) == {5: 1}
+        assert tr.count_freq([-1, -1, 0]) == {-1: 2, 0: 1}
+        assert tr.most_frequent([3, 1, 3, 2, 1, 3]) == 3
+        assert tr.most_frequent([2, 2, 5, 5]) == 2
+        assert tr.most_frequent([5, 5, 2, 2]) == 2
+        assert tr.most_frequent([-3, -3, 4, 4]) == -3
+        assert tr.most_frequent([7]) == 7
+        with pytest.raises(ValueError) as exc:
+            tr.most_frequent([])
+        assert str(exc.value)
+    # ---- end of extension ----
     else:
         assert tr.primes_up_to(20) == [2, 3, 5, 7, 11, 13, 17, 19]
         assert tr.primes_up_to(1) == []
