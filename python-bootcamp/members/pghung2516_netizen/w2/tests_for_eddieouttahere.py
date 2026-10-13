@@ -1,7 +1,6 @@
 """Unit tests verifying Week 1 code of Eddie (eddieouttahere)."""
 
 import pytest
-
 from members.eddieouttahere.w1.grades import summary
 from members.eddieouttahere.w1.rules import can_register_thesis, missing
 from members.eddieouttahere.w1.text_tools import top_k, word_count
