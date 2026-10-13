@@ -18,9 +18,6 @@ class Task:
         if isinstance(self.deadline, str):
             self.deadline = date.fromisoformat(self.deadline)
 
-        if not isinstance(self.importance, int) or isinstance(self.importance, bool):
-            raise ValueError(f"importance must be an integer between 1 and 5, got {self.importance!r}")
-
         if not (1 <= self.importance <= 5):
             raise ValueError(f"importance must be between 1 and 5, got {self.importance}")
 

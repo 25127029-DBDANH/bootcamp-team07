@@ -50,7 +50,7 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         tasks = load_tasks(csv_file)
-    except Exception as e:
+    except (ValueError, OSError) as e:
         print(f"Error loading tasks: {e}", file=sys.stderr)
         return 1
 

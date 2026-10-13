@@ -1,19 +1,12 @@
 """Unit tests verifying Week 1 code of Eddie (eddieouttahere)."""
 
-import sys
-from pathlib import Path
-
 import pytest
 
-BOOTCAMP_DIR = Path(__file__).resolve().parents[3]
-if str(BOOTCAMP_DIR) not in sys.path:
-    sys.path.insert(0, str(BOOTCAMP_DIR))
-
-from members.eddieouttahere.w1.grades import summary  # noqa: E402
-from members.eddieouttahere.w1.rules import can_register_thesis, missing  # noqa: E402
-from members.eddieouttahere.w1.text_tools import top_k, word_count  # noqa: E402
-from members.eddieouttahere.w1.timetable import by_day  # noqa: E402
-from members.eddieouttahere.w1.translate import binary_search  # noqa: E402
+from members.eddieouttahere.w1.grades import summary
+from members.eddieouttahere.w1.rules import can_register_thesis, missing
+from members.eddieouttahere.w1.text_tools import top_k, word_count
+from members.eddieouttahere.w1.timetable import by_day
+from members.eddieouttahere.w1.translate import binary_search
 
 
 def test_eddie_grades():
