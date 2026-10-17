@@ -1,5 +1,4 @@
 import pytest
-
 from members.dmh554.w1.translate import count_freq, most_frequent
 
 
