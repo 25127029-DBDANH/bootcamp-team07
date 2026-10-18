@@ -5,3 +5,7 @@
 - Used Codex to explain Python dataclasses, CSV parsing and type conversion, custom exceptions, pytest cross-tests, and running a package with `python -m`.
 - Codex helped draft and refine `models.py`, `io_utils.py`, `errors.py`, `tests_for_pghung2516_netizen.py`, `__init__.py`, and `__main__.py`.
 - The student should review and understand every submitted line before the individual defense, as required by the course.
+
+## Week 2 group task — LamNotNam1607
+
+- Used Codex to review the T3 allocation-test assignment and refine `python-bootcamp/tests/test_allocate.py` with clearer cases for greedy allocation across tasks, partial allocation, ordering, and the hour-budget bound.
