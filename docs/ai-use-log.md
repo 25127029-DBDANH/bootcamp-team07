@@ -3,7 +3,7 @@
 ## Week 3 — LamNotNam1607
 
 - Codex helped implement and refine the W3 date parser, route latency analysis, and argparse CLI, and add type hints and docstrings to my W1/W2 functions.
-- The CLI reuses my W2 CSV loader and the shared study-planner pipeline. I ran the provided W3 tests; the student should review and understand every submitted line before the individual defense.
+- The CLI reuses my W2 CSV loader and the shared study-planner pipeline. Codex ran the provided W3 tests; the student should review and understand every submitted line before the individual defense.
 
 ## Week 2 — LamNotNam1607
 
