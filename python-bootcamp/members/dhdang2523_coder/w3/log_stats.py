@@ -1,7 +1,8 @@
 from collections import Counter, defaultdict
-from typing import List, Tuple, Dict, Any
+from typing import Any
 
-def analyse(pairs: List[Tuple[str, float]]) -> Dict[str, Any]:
+
+def analyse(pairs: list[tuple[str, float]]) -> dict[str, Any]:
     if not pairs:
         return {"counts": Counter(), "p95": {}, "slowest": None}
 

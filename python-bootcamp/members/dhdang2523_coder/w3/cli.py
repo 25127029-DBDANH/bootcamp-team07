@@ -1,7 +1,9 @@
 import argparse
 import sys
 from datetime import date
+
 from members.dhdang2523_coder.w2.io_utils import load_tasks
+
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="study_planner_cli")
