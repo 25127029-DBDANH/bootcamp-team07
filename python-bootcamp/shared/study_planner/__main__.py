@@ -9,11 +9,12 @@ import sys
 from datetime import date
 
 from shared.study_planner.allocate import allocate
+
+# Thêm import InfeasiblePlan và check_feasible từ file errors.py của bạn
+from shared.study_planner.errors import InfeasiblePlan, check_feasible
 from shared.study_planner.parse import parse_csv
 from shared.study_planner.prioritise import prioritise
 from shared.study_planner.render import render
-# Thêm import InfeasiblePlan và check_feasible từ file errors.py của bạn
-from shared.study_planner.errors import InfeasiblePlan, check_feasible
 
 
 def build_parser() -> argparse.ArgumentParser:
