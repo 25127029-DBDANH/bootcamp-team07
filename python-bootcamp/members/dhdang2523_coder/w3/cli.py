@@ -14,7 +14,6 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
-    today = args.today or date.today()
     try:
         tasks = load_tasks(args.csv)
         print(f"Tonight ({args.hours:.1f} h):")
