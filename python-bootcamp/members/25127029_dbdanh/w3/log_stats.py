@@ -1,8 +1,10 @@
 import math
 from collections import Counter, defaultdict
+from typing import Any
 
 
-def analyse(pairs: list[tuple[str, int | float]]) -> dict:
+def analyse(pairs: list[tuple[str, int | float]]) -> dict[str, Any]:
+    """Analyse chat logs and compute counts, p95 latency, and slowest route."""
     counts: Counter[str] = Counter()
     by_route: defaultdict[str, list[float]] = defaultdict(list)
 
