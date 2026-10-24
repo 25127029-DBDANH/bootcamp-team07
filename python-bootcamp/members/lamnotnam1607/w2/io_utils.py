@@ -8,7 +8,7 @@ from .models import Task
 
 def load_tasks(path: str | Path) -> list[Task]:
     """Load tasks from a CSV file with a header row."""
-    tasks = []
+    tasks: list[Task] = []
 
     with open(path, newline="", encoding="utf-8") as file:
         reader = csv.DictReader(file)

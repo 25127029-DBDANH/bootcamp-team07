@@ -1,5 +1,6 @@
 def by_day(entries: list[tuple[str, str]]) -> dict[str, list[str]]:
-    result = {}
+    """Group course names by day and sort each day's courses."""
+    result: dict[str, list[str]] = {}
     for course, day in entries:
         if day not in result:
             result[day] = []
