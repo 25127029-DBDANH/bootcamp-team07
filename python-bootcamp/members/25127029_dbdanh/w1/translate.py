@@ -2,9 +2,11 @@
 
 
 def insertion_sort(a: list[int]) -> list[int]:
-    """Sắp xếp danh sách a ngay tại chỗ và trả về danh sách đó.
-    Điểm khác biệt so với phiên bản C++: hàm C++ trả về void (không trả về giá trị) và cần một tham số tham chiếu (std::vector<int>&) để thay đổi vector của bên gọi hàm.
-    Hàm Python cũng thay đổi danh sách được truyền vào ngay tại chỗ, nhưng trả về danh sách đó để kết quả có thể được sử dụng trực tiếp."""
+    """Sort list in-place and return the sorted list.
+
+    Difference from C++: C++ version returns void and modifies std::vector<int>&,
+    whereas Python function mutates the list in-place and also returns it for chaining.
+    """
     for i in range(1, len(a)):
         key = a[i]
         j = i - 1

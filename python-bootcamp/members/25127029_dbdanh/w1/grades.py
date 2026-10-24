@@ -1,6 +1,7 @@
-def summary(score: list[float]) -> dict:
+def summary(score: list[float]) -> dict[str, float]:
+    """Calculate summary statistics including min, max, mean, and median."""
     if not score:
-        raise ValueError
+        raise ValueError("score list cannot be empty")
     chuoi_da_sap_xep = sorted(score)
     do_dai = len(score)
     TB = sum(score) / do_dai
