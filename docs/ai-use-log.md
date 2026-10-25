@@ -19,3 +19,9 @@
 
 - 2026-10-18 | W2-1, 2, 3, 5 (`members/dmh554/w2`) | Claude wrote code and tests, I read and ran them.
 - 2026-10-18 | `prioritise.py` + test (`shared/study_planner`) | Claude wrote code and tests, I read and ran them.
+
+## Week 3 — pghung2516-netizen
+
+- Used AI assistance to clarify edge cases in relative date parsing (handling past weekday occurrences as next week) and nearest-rank percentile calculations for route latency in `log_stats.py`.
+- Reused `load_tasks` from Week 2 in `cli.py` and implemented full argument handling via standard library `argparse`.
+- Verified all code locally with `ruff` and `pytest`.

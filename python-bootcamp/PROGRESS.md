@@ -20,3 +20,4 @@
 | ankhang-maker | w3 | - | #45 | dhdang2523-coder | 3/3 | 3.0 |
 | dhdang2523-coder | w3 | - | #46 | DMH554 | 3/3 | 3.0 |
 | LamNotNam1607 | w3 | #44 | #43 | pghung2516-netizen | 3/3 | 3.0 |
+| pghung2516-netizen | w3 | #52 | #53 | 25127029-DBDANH | 3/3 | 3.5 |
