@@ -1,4 +1,4 @@
-# AI use log
+# AI Use Log
 
 ## Week 3 — LamNotNam1607
 
@@ -14,5 +14,8 @@
 ## Week 2 group task — LamNotNam1607
 
 - Used Codex to review the T3 allocation-test assignment and refine `python-bootcamp/tests/test_allocate.py` with clearer cases for greedy allocation across tasks, partial allocation, ordering, and the hour-budget bound.
-- 2026-10-18 | W2-1,2,3,5 (members/dmh554/w2) | Claude wrote code and tests, I read and ran them
-- 2026-10-18 | prioritise.py + test (shared/study_planner) | Claude wrote code and tests, I read and
+
+## Week 2 — DMH554
+
+- 2026-10-18 | W2-1, 2, 3, 5 (`members/dmh554/w2`) | Claude wrote code and tests, I read and ran them.
+- 2026-10-18 | `prioritise.py` + test (`shared/study_planner`) | Claude wrote code and tests, I read and ran them.
