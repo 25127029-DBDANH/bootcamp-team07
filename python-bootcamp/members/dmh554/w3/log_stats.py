@@ -56,7 +56,9 @@ def analyse(pairs: list[tuple[str, int | float]]) -> dict[str, Any]:
     p95: dict[str, float] = {}
     for route, times in latencies.items():
         times_sorted = sorted(times)
-        # Nearest-rank method: index = ceil(0.95 * N) - 1
+        # Nearest-rank p95: rank = ceil(0.95 * N), then 0-indexed as rank-1.
+        # E.g. for N=3 → rank=3 → idx=2 → the 3rd (largest) value.
+        # This matches: fee=[100,200,300] → p95["fee"]=300.
         idx = math.ceil(0.95 * len(times_sorted)) - 1
         p95[route] = times_sorted[idx]
 
