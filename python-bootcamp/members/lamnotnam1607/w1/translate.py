@@ -1,4 +1,6 @@
 """Module translating string palindrome and reversal from C++ to Python."""
+
+
 def reverse_string(s: str) -> str:
     """
     Reverse a string.
@@ -7,6 +9,8 @@ def reverse_string(s: str) -> str:
     - In Python, str is immutable, so slicing s[::-1] creates and returns a new reversed string.
     """
     return s[::-1]
+
+
 def is_palindrome(s: str) -> bool:
     """
     Check if a string is a palindrome.
